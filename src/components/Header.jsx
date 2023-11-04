@@ -17,11 +17,8 @@ const Header = () => {
 					<Button link="/cars">Mulai Sewa Mobil</Button>
 				</div>
 			</div>
-			<div className="w-6/12 pl-4 self-end">
-				<img
-					className="h-full w-full object-contain object-right-bottom"
-					src={img_car}
-				/>
+			<div className="w-6/12 pl-4 sm:pl-0 self-end">
+				<img className="h-full w-full object-contain" src={img_car} />
 			</div>
 		</div>
 	)
