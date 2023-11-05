@@ -30,18 +30,18 @@ const questions = [
 ]
 
 const FAQSection = () => {
-	const [activeIndex, setActiveIndex] = useState()
+	const [activeIndex, setActiveIndex] = useState(-1)
 
 	const handleOpen = (index) => {
 		if (activeIndex === index) {
-			setActiveIndex()
+			setActiveIndex(-1)
 		} else {
 			setActiveIndex(index)
 		}
 	}
 	return (
-		<div className="w-10/12 mx-auto my-[100px] flex flex-row justify-between">
-			<div className="w-5/12">
+		<div className="md:w-10/12 w-full md:px-0 px-4 mx-auto md:my-[100px] my-[60px] flex flex-row flex-wrap justify-between gap-y-6">
+			<div className="md:w-5/12 w-full">
 				<h1 className="text-2xl font-bold leading-9 mb-4">
 					Frequently Asked Question
 				</h1>
@@ -49,7 +49,7 @@ const FAQSection = () => {
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit
 				</p>
 			</div>
-			<div className="w-6/12 flex flex-col gap-y-4">
+			<div className="md:w-6/12 w-full flex flex-col gap-y-4">
 				{questions.map((question, index) => {
 					return (
 						<Accordion

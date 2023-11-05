@@ -38,13 +38,13 @@ const Carousel = ({ testimony }) => {
 						return (
 							<div
 								key={indexTestimony}
-								className="w-full shrink-0 bg-[#F1F3FF] py-16 px-11 flex flex-row items-center gap-x-[46px] "
+								className="w-full shrink-0 bg-[#F1F3FF] py-16 px-11 flex flex-row flex-wrap md:flex-nowrap items-center justify-center gap-x-[46px] gap-y-6"
 							>
 								<div className="w-20 h-20 rounded-full overflow-hidden shrink-0">
 									<img className="w-full h-full" src={dataTestiomny.image} />
 								</div>
 								<div className="flex flex-col items-start gap-y-2">
-									<div className="flex flex-row">
+									<div className="flex flex-row self-center md:self-start mb-4 md:mb-0">
 										{[...Array(dataTestiomny.stars)].map(
 											(dataStar, indexStar) => {
 												return <img key={indexStar} src={star} />

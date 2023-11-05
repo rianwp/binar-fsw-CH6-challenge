@@ -33,12 +33,12 @@ const features = [
 
 const WhyUsSection = () => {
 	return (
-		<div className="w-10/12 mx-auto mt-[100px]">
+		<div className="md:w-10/12 w-full md:px-0 px-4 mx-auto md:mt-[100px] mt-[60px]">
 			<h1 className="font-bold text-2xl leading-9 mb-4">Why Us?</h1>
 			<p className="text-sm font-light mb-6">
 				Mengapa harus pilih Binar Car Rental?
 			</p>
-			<div className="flex flex-row w-[calc(100%+32px)] -ml-4">
+			<div className="flex flex-row flex-wrap w-[calc(100%+32px)] -ml-4">
 				{features.map((feature, index) => {
 					return (
 						<Feature
