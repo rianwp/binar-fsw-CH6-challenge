@@ -28,7 +28,10 @@ const testimony = [
 
 const TestimonySection = () => {
 	return (
-		<div className="md:w-8/12 w-full md:px-0 px-4 mx-auto md:mt-[84px] mt-[44px]">
+		<div
+			id="testimonial"
+			className="md:w-8/12 w-full md:px-0 px-4 mx-auto md:pt-[84px] pt-[44px]"
+		>
 			<h1 className="text-2xl font-bold leading-9 text-center mb-4">
 				Testimonial
 			</h1>

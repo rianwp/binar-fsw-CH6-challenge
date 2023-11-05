@@ -2,7 +2,7 @@ import Button from "../../Button"
 
 const CTABannerSection = () => {
 	return (
-		<div className="md:w-10/12 w-full md:px-0 px-4 mx-auto md:mt-[100px] mt-[60px]">
+		<div className="md:w-10/12 w-full md:px-0 px-4 mx-auto md:pt-[100px] pt-[60px]">
 			<div className="flex flex-row py-16 justify-center items-center bg-[#0D28A6] rounded-[13px]">
 				<div className="w-1/2 text-center">
 					<h1 className="text-white text-4xl font-bold leading-[54px] mb-4">

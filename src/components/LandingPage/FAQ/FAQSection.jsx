@@ -40,7 +40,10 @@ const FAQSection = () => {
 		}
 	}
 	return (
-		<div className="md:w-10/12 w-full md:px-0 px-4 mx-auto md:my-[100px] my-[60px] flex flex-row flex-wrap justify-between gap-y-6">
+		<div
+			id="faq"
+			className="md:w-10/12 w-full md:px-0 px-4 mx-auto md:py-[100px] py-[60px] flex flex-row flex-wrap justify-between gap-y-6"
+		>
 			<div className="md:w-5/12 w-full">
 				<h1 className="text-2xl font-bold leading-9 mb-4">
 					Frequently Asked Question

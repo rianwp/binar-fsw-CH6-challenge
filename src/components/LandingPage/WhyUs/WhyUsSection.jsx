@@ -33,7 +33,10 @@ const features = [
 
 const WhyUsSection = () => {
 	return (
-		<div className="md:w-10/12 w-full md:px-0 px-4 mx-auto md:mt-[100px] mt-[60px]">
+		<div
+			id="whyus"
+			className="md:w-10/12 w-full md:px-0 px-4 mx-auto md:pt-[100px] pt-[60px]"
+		>
 			<h1 className="font-bold text-2xl leading-9 mb-4">Why Us?</h1>
 			<p className="text-sm font-light mb-6">
 				Mengapa harus pilih Binar Car Rental?

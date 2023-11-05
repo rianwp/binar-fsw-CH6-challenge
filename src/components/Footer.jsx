@@ -31,21 +31,21 @@ const socialMedias = [
 
 const Footer = () => {
 	return (
-		<div className="md:w-10/12 w-full md:px-0 px-4 mx-auto flex flex-row flex-wrap justify-between py-10 gap-y-4">
-			<div className="w-full md:w-auto flex flex-col gap-y-4">
+		<div className="md:w-10/12 w-full md:px-0 px-4 mx-auto flex flex-row lg:flex-nowrap flex-wrap justify-between py-10 gap-y-4">
+			<div className="w-full md:w-1/2 lg:w-auto flex flex-col gap-y-4 pr-4">
 				<p className="text-sm font-light">
 					Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
 				</p>
 				<p className="text-sm font-light">binarcarrental@gmail.com</p>
 				<p className="text-sm font-light">081-233-334-808</p>
 			</div>
-			<div className="w-full md:w-auto flex flex-col gap-y-4">
+			<div className="w-full md:w-1/2 lg:w-auto flex flex-col gap-y-4 pr-4">
 				<NavLink link="/#ourservices">Our Services</NavLink>
 				<NavLink link="/#whyus">Why Us</NavLink>
 				<NavLink link="/#testimonial">Testimonial</NavLink>
 				<NavLink link="/#faq">FAQ</NavLink>
 			</div>
-			<div className="w-full md:w-auto flex flex-col gap-y-4">
+			<div className="w-full md:w-1/2 lg:w-auto flex flex-col gap-y-4 pr-4">
 				<p className="text-sm font-light">Connect with us</p>
 				<div className="flex flex-row gap-x-4">
 					{socialMedias.map((socialMedia, index) => {
@@ -57,7 +57,7 @@ const Footer = () => {
 					})}
 				</div>
 			</div>
-			<div className="w-full md:w-auto flex flex-col gap-y-4">
+			<div className="w-full md:w-1/2 lg:w-auto flex flex-col gap-y-4 pr-4">
 				<p className="text-sm font-light">Copyright Binar 2022</p>
 				<BrandLogo />
 			</div>
