@@ -15,17 +15,17 @@ const OurServicesSection = () => {
 			id="ourservices"
 			className="mx-auto md:px-0 px-4 flex flex-row flex-wrap md:pt-[100px] pt-[60px] justify-center items-center"
 		>
-			<div className="lg:2-4/12 md:w-5/12 w-full p-8 flex flex-col">
+			<div className="lg:w-4/12 md:w-5/12 w-full p-8 flex flex-col">
 				<img
 					className="w-full h-full object-contain self-end"
 					src={img_service}
 				/>
 			</div>
-			<div className="lg:2-4/12 md:w-5/12 w-full p-4">
+			<div className="lg:w-4/12 md:w-5/12 w-full p-4">
 				<h1 className="font-bold text-2xl leading-9 mb-6">
 					Best Car Rental for any kind of trip in Sragen!
 				</h1>
-				<p className="mb-4 font-light text-sm">
+				<p className="mb-4 text-sm font-light">
 					Sewa mobil di Sragen bersama Binar Car Rental jaminan harga lebih
 					murah dibandingkan yang lain, kondisi mobil baru, serta kualitas
 					pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting,
