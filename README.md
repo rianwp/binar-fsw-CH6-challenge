@@ -14,7 +14,7 @@ git clone https://github.com/rianwp/binar-fsw-CH6-challenge.git
 npm install
 ```
 
-3. Menjalankan server
+3. Menjalankan react
 
 ```
 npm run dev
