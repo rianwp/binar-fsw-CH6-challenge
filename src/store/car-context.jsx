@@ -23,7 +23,7 @@ const carReducer = (state, action) => {
 		case "SET_LOADING":
 			return { ...state, isLoading: action.payload }
 		case "SET_CARS":
-			return { ...state, cars: action.payload }
+			return { ...state, cars: action.payload, filteredCars: action.payload }
 		case "SET_FILTER":
 			return { ...state, filter: action.payload }
 		case "FILTER_CARS":
@@ -72,7 +72,7 @@ export const CarProvider = ({ children }) => {
 		}
 
 		fetchData()
-	}, [query])
+	}, [])
 
 	return (
 		<CarContext.Provider value={{ state, dispatch }}>
