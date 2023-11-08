@@ -3,7 +3,7 @@ import clock from "../../assets/clock-input.svg"
 import { useContext } from "react"
 import { CarContext } from "../../store/car-context"
 
-const waktuJemput = ["08:00", "09.00", "10.00", "11.00", "12.00"]
+const waktuJemput = ["08:00", "09:00", "10:00", "11:00", "12:00"]
 
 const WaktuJemputInput = () => {
 	const { state, dispatch } = useContext(CarContext)
@@ -46,7 +46,7 @@ const WaktuJemputInput = () => {
 				}`}
 			>
 				<p className="text-xs font-light leading-[18px] text-[#3C3C3C]">
-					{isOpen ? "Default" : `${waktuJemputText} WIB`}
+					{isOpen ? "Default" : `${waktuJemputText.replace(":", ".")} WIB`}
 				</p>
 				<div className="shrink-0 w-[18px] h-[18px]">
 					<img src={clock} className="w-full h-full" />

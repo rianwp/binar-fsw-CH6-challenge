@@ -26,7 +26,7 @@ const Car = ({ car }) => {
 							{manufacture} {model}/{type}
 						</p>
 						<p className="text-base font-bold">
-							{numberSplit(rentPerDay)} / hari
+							Rp {numberSplit(rentPerDay)} / hari
 						</p>
 						<p className="text-sm font-light">{description}</p>
 					</div>

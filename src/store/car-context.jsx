@@ -33,9 +33,10 @@ const carReducer = (state, action) => {
 				let filterTipeDriver = true
 
 				const dateAvailable = new Date(car.availableAt)
-				const dateSewa = state.filter.tanggal
-					? new Date(`${state.filter.tanggal} ${state.filter.waktuJemput}`)
-					: new Date()
+				const dateSewa = new Date(
+					`${state.filter.tanggal} ${state.filter.waktuJemput}`
+				)
+
 				const isAvailable = state.filter.tipeDriver && car.available
 				const isNotAvailable = !state.filter.tipeDriver && !car.available
 
