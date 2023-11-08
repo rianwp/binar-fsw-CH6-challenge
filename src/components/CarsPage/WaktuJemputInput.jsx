@@ -32,7 +32,9 @@ const WaktuJemputInput = () => {
 	}
 
 	const waktuJemputText =
-		state.filter.waktuJemput === "" ? "Pilih Waktu" : state.filter.waktuJemput
+		state.filter.waktuJemput === ""
+			? "Pilih Waktu"
+			: `${state.filter.waktuJemput} WIB`
 
 	return (
 		<div className="relative flex flex-col gap-y-1 w-full font-rubik">
@@ -46,7 +48,7 @@ const WaktuJemputInput = () => {
 				}`}
 			>
 				<p className="text-xs font-light leading-[18px] text-[#3C3C3C]">
-					{isOpen ? "Default" : `${waktuJemputText.replace(":", ".")} WIB`}
+					{isOpen ? "Default" : `${waktuJemputText.replace(":", ".")}`}
 				</p>
 				<div className="shrink-0 w-[18px] h-[18px]">
 					<img src={clock} className="w-full h-full" />
